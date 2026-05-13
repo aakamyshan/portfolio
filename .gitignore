@@ -12,3 +12,14 @@ $RECYCLE.BIN/
 .idea/
 *.suo
 *.swp
+
+# SSH-ключи
+id_ed25519*
+
+# Логи и резервные копии
+*.log
+*.bak
+
+# Модули сборщиков (на будущее)
+node_modules/
+package-lock.json
