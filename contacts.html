@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Зворотний зв'язок та контактна інформація автора сайту">
+    <title>Контакти | Портфоліо</title>
+</head>
+<body>
+    <!-- Шапка сайту -->
+    <header>
+        <h1>Мої контакти</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основний контент сторінки -->
+    <main>
+        <section>
+            <h2>Контактна інформація</h2>
+            <p>Ви можете зв'язатися зі мною за допомогою наступних прямих посилань:</p>
+            <ul>
+                <!-- Клікабельні посилання за завданням -->
+                <li>Email: <a href="mailto:a.a.kamyshan@student.khai.edu">a.a.kamyshan@student.khai.edu</a></li>
+                <li>Телефон: <a href="tel:+380000000000">+380 (99) 733-01-63</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Форма зворотного зв'язку</h2>
+            <!-- Інтерактивна форма за завданням -->
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Надіслати повідомлення</legend>
+                    
+                    <p>
+                        <label for="username">Ваше ім'я:</label>
+                        <input type="text" id="username" name="username" placeholder="Введіть ім'я" required>
+                    </p>
+                    
+                    <p>
+                        <label for="useremail">Ваш Email:</label>
+                        <input type="email" id="useremail" name="useremail" placeholder="name@example.com" required>
+                    </p>
+                    
+                    <p>
+                        <label for="subject">Тема звернення:</label>
+                        <select id="subject" name="subject">
+                            <option value="cooperation">Співпраця</option>
+                            <option value="question">Запитання щодо лабораторної</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label>Тип звернення:</label><br>
+                        <input type="radio" id="type_personal" name="contact_type" value="personal" checked>
+                        <label for="type_personal">Особисте</label>
+                        <input type="radio" id="type_business" name="contact_type" value="business">
+                        <label for="type_business">Ділове</label>
+                    </p>
+                    
+                    <p>
+                        <input type="checkbox" id="agreement" name="agreement" required>
+                        <label for="agreement">Даю згоду на обробку персональних даних</label>
+                    </p>
+                    
+                    <p>
+                        <label for="message">Повідомлення:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="40" placeholder="Текст вашого повідомлення..." required></textarea>
+                    </p>
+                    
+                    <p>
+                        <button type="submit">Відправити дані</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Підвал сайту -->
+    <footer>
+        <p>&copy; 2026 Артур Камишан. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
