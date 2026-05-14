@@ -5,43 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Головна сторінка персонального сайту-портфоліо студента ХАІ">
     <title>Головна | Портфоліо Артура</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Шапка сайту -->
-    <header>
-        <h1>Персональний сайт-портфоліо</h1>
-        <!-- Головне меню -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про мене</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+    <header class="site-header">
+        <h1 class="site-title">Персональний сайт-портфоліо</h1>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Головна</a></li>
+                <li class="nav-item"><a href="about.html">Про мене</a></li>
+                <li class="nav-item"><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Основний контент сторінки -->
-    <main>
-        <section>
-            <h2>Вітаю на моєму першому веб-сайті!</h2>
+    <main class="main-content">
+        <section id="hero" class="hero-section">
+            <h2 class="section-title">Вітаю на моєму першому веб-сайті!</h2>
             <p>Мене звати <strong>Артур</strong>. Я навчаюся в Національному аерокосмічному університеті імені М. Є. Жуковського <strong>"ХАІ"</strong>. Цей сайт створено під час виконання лабораторної роботи з комп'ютерних мереж та веб-технологій.</p>
             
             <p>Зараз я активно вивчаю базові концепції розмітки сторінок. Цей проєкт реалізовано виключно на чистому <em>HTML</em>, без використання стилів CSS чи сценаріїв JavaScript, що дозволяє детально зрозуміти семантичну структуру документів.</p>
             
-            <!-- Обов'язкова цитата за завданням -->
-            <blockquote>
+            <blockquote class="quote-card">
                 "Найкращий спосіб передбачити майбутнє — це створити його." — <em>Пітер Друкер</em>
             </blockquote>
-    <!-- Обов'язкове зображення за завданням -->
-            <figure>
-                <img src="images/bobr.png" alt="Веселий бобр" width="300">
+            
+            <figure class="profile-figure">
+                <img src="images/bobr.png" alt="Веселий бобр" class="profile-img" width="300">
+                <span class="badge-status">Online</span>
                 <figcaption>Фото першого помічника автора сайту — Бобра</figcaption>
             </figure>
         </section>
     </main>
 
-    <!-- Підвал сайту -->
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 Артур Камишан. Всі права захищені.</p>
     </footer>
 </body>

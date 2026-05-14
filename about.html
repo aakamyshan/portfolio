@@ -5,27 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Інформація про автора сайту, його освіту та навички">
     <title>Про мене | Портфоліо</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Шапка сайту -->
-    <header>
-        <h1>Про мене</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html">Про мене</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
+    <header class="site-header">
+        <h1 class="site-title">Про мене</h1>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Головна</a></li>
+                <li class="nav-item"><a href="about.html">Про мене</a></li>
+                <li class="nav-item"><a href="contacts.html">Контакти</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Основний контент сторінки -->
-    <main>
-        <section>
-            <h2>Біографія та освіта</h2>
+    <main class="main-content">
+        <section class="info-section">
+            <h2 class="section-title">Біографія та освіта</h2>
             <h3>Основні відомості</h3>
-            <!-- Список опису за завданням -->
-            <dl>
+            <dl class="description-list">
                 <dt>Навчальний заклад</dt>
                 <dd>Національний аерокосмічному університет ім. М. Є. Жуковського "ХАІ"</dd>
                 <dt>Спеціальність</dt>
@@ -35,10 +33,9 @@
             </dl>
         </section>
 
-        <section>
-            <h2>Мої професійні навички</h2>
-            <!-- Складна таблиця за завданням -->
-            <table border="1">
+        <section class="skills-section">
+            <h2 class="section-title">Мої професійні навички</h2>
+            <table class="skills-table">
                 <caption>Матриця оцінки знань та технологій</caption>
                 <thead>
                     <tr>
@@ -60,22 +57,20 @@
                     </tr>
                 </tbody>
             </table>
-          <!-- Обов'язковий медіа-елемент за завданням -->
-        <figure>
-            <video src="video/zarnitsa.mp4" controls width="400"></video>
-            <figcaption>Відеозапис: Літня зарниця (внутрішньохмарна блискавка), зафіксована автором</figcaption>
-        </figure>
+            
+            <figure class="media-container">
+                <video src="video/zarnitsa.mp4" controls class="portfolio-video" width="400"></video>
+                <figcaption>Відеозапис: Літня зарниця (внутрішньохмарна блискавка), зафіксована автором</figcaption>
+            </figure>
         </section>
 
-        <!-- Бічна панель за завданням -->
-        <aside>
+        <aside class="sidebar-box">
             <h4>Цікавий факт</h4>
-            <p>Під час виконання цієї лабораторної роботи жоден бобр не постраждав, а безпека SSH-ключів була успішно збережена!</p>
+            <p>Під час виконання цієї лабораторної роботи жоден бобр не постраждав, а безпека SSH-ключів була успешно збережена!</p>
         </aside>
     </main>
 
-    <!-- Підвал сайту -->
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 Артур Камишан. Всі права захищені.</p>
     </footer>
 </body>
